@@ -1,0 +1,257 @@
+/*------------- CSS RESET -----------------------*/
+
+*{
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  line-height: 1em;
+  overflow-x: hidden;
+}
+
+body{
+  /*width: 75%;
+  max-width: 700px;*/
+  font-family: 'Open Sans','Arial', sans-serif;
+  /*font-family: 'Libre Baskerville', Georgia, Times, 'Times New Roman',serif;*/
+  margin: auto;
+  background-color: #ffffff;*/
+  /*background-color: #fafafa;*/
+  color: #333;
+  line-height: 1.8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: fadein 2s;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+::-webkit-scrollbar {
+    display: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*--------------------- GRID ----------------------*/
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: 33.4vw 33.4vw 33.4vw;
+  grid-template-rows: 15vh 85vh 40vh 5vh;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+  background-color: #333333;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.b {
+  background-attachment: fixed;
+  background:linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../images/type.jpg");
+  color: #58595b;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ;
+}
+
+h1 {
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  font-size: 6vw;
+  color: #333333;
+  height: 20vh
+}
+
+.c {
+  background-color: #f1f2f2;
+  color: #58595b;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+p.intro {
+  line-height: 3vh;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  line-height: 3vh;
+  column-count: 4;
+  column-rule-style: solid;
+  column-rule-width: thin;
+  column-gap: 5vw;
+  column-rule-color: grey;
+  height: auto;
+}
+
+h2 {
+  font-family: 'Open Sans';
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  column-span: all;
+}
+
+.d {
+  background-color: #e6e7e8;
+  color: #58595b;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+p.footer {
+  font-size: 2vh;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+  height: 4vh;
+}
+
+.type-wrapper {
+  display: grid;
+  grid-template-columns: 33.4vw 33.4vw 33.4vw;
+  grid-template-rows: 15vh 80vh 5vh;
+  background-color: #fff;
+  color: #444;
+}
+
+h2.title {
+  font-size: 3.5vh;
+  font-weight: bold;
+}
+
+p.content {
+  font-size: 2vh;
+  line-height: 3vh;
+  font-weight: lighter;
+}
+
+.e {
+  background-color: #d1d3d4;
+  color: #58595b;
+
+
+}
+
+.f {
+  background-color: #bcbec0;
+  color: #58595b;
+}
+
+.g {
+  background:linear-gradient(to right, rgba(188,189,192,1), rgba(188,189,192,0)), url("../images/jenson1.png");
+  background-size: 37vw auto;
+  background-position: -2vw ;
+  background-repeat: repeat-y;
+  color: #58595b;
+}
+
+.h {
+  background:linear-gradient(to right, rgba(188,189,192,1), rgba(188,189,192,0)), url("../images/baskerville2.png");
+  background-size: 55vw auto;
+  background-position: -2vw ;
+  background-repeat: repeat-y;
+  color: #58595b;
+}
+
+.i {
+  background:linear-gradient(to right, rgba(188,189,192,1), rgba(188,189,192,0)), url("../images/bodoni.gif");
+  background-size: 45vw auto;
+  background-position: -5vw ;
+  background-repeat: repeat-y;
+  color: #58595b;
+}
+
+.j {
+  background-color: #d1d3d4;
+  color: #58595b;
+}
+
+.k {
+  background-color: #d1d3d4;
+  color: #58595b;
+  grid-column-start: 2;
+  grid-column-end: -1;
+}
+
+h2.about {
+  font-size: 3.5vh;
+  font-weight: bold;
+  column-span: all;
+  margin-left: 10vw;
+}
+
+img.portrait {
+  height: 50vh;
+  width: auto;
+  margin-left: 10vw;
+}
+
+p.about {
+  margin-top: 6vh;
+  width: 30vw;
+  line-height: 3vh;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+
+table.social {
+  margin-top: 7.3vh;
+}
+
+table.social img {
+  height: 2.5vw;
+  width: auto;
+  padding-right: 1vw;
+}
+
+table.social img:hover {
+  opacity: .6;
+}
+
+
+/*---------------- NAV --------------------*/
+
+nav{
+  padding: 1em 0;
+
+}
+
+nav ul{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 3vh;
+}
+
+nav ul li{
+  display: inline;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: 'Open Sans';
+  font-weight: lighter;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  border-bottom: none;
+  opacity: .6;
+}
